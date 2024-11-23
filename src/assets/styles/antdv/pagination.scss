@@ -1,0 +1,43 @@
+@use 'sass:color';
+@use '../variables' as *;
+
+.ant-pagination-item-active {
+  color: #fff;
+  background: $primary-color;
+  border: none;
+  border-radius: $border-radius-base;
+
+  & > a {
+    color: #fff !important;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
+.ant-pagination-item {
+  color: $text-color;
+  border: none;
+}
+
+.ant-pagination-total-text {
+  color: $text-color;
+}
+
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  border: none;
+}
+
+.ant-pagination-options-quick-jumper input {
+  &:hover {
+    border-color: color.adjust($border-color-base, $alpha: -0.7);
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 1px color.adjust($primary-color, $alpha: -0.8);
+  }
+}

@@ -1,0 +1,31 @@
+@use '../variables' as *;
+
+.ant-calendar-picker-input.ant-input {
+  background-color: $input-bg-color;
+  border: none;
+}
+
+.ant-picker {
+  background-color: $input-bg-color;
+  border: none;
+}
+
+.ant-picker-focused {
+  box-shadow: 0 0 0 1px $input-border-color;
+}
+
+.ant-picker-range .ant-picker-active-bar {
+  display: none;
+}
+
+.ant-picker-today-btn {
+  color: $primary-color;
+
+  &:hover {
+    color: $dark-primary-color;
+  }
+}
+
+.ant-form-item-has-error .ant-picker {
+  background-color: $input-bg-error-color;
+}

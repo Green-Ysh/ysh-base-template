@@ -1,0 +1,12 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-card {
+  background: #fff;
+  border-radius: $border-radius-base;
+  box-shadow: $box-shadow-base;
+}
+
+.ant-card-body {
+  padding: 20px;
+}

@@ -1,0 +1,10 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-avatar {
+  background: $avatar-bg-color;
+}
+
+.ava.ant-avatar-square {
+  border-radius: $border-radius-lg;
+}

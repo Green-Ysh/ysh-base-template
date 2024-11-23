@@ -1,0 +1,25 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: $input-bg-color;
+  border: none;
+}
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  box-shadow: 0 0 0 1px $input-border-color;
+}
+
+.ant-form-item-has-error .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector {
+  background-color: $input-bg-error-color;
+}
+
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input).ant-select-open
+  .ant-select-selector,
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input).ant-select-focused
+  .ant-select-selector {
+  border-color: $input-error-color;
+  box-shadow: 0 0 0 1px $input-error-color;
+}

@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-modal-content {
+  overflow: hidden;
+  border-radius: $border-radius-lg;
+}
+
+.ant-modal-header {
+  border-bottom: none;
+  border-radius: $border-radius-lg $border-radius-lg 0 0;
+}
+
+.ant-modal-body {
+  padding: 0 24px;
+}
+
+.ant-modal-footer {
+  padding: 16px 24px;
+  padding-top: 0;
+  border-top: none;
+  border-radius: 0 0 $border-radius-lg $border-radius-lg;
+}

@@ -1,0 +1,18 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+.ant-form-item-explain-success {
+  display: none;
+}
+
+.ant-form-item-with-help .ant-form-item-explain {
+  min-height: 0;
+}
+
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  margin-right: 1px;
+}

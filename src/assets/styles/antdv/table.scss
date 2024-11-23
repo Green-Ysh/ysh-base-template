@@ -1,0 +1,38 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.ant-table-thead > tr > th {
+  color: $heading-color;
+  font-weight: bold;
+  line-height: 20px;
+  background: #fff;
+}
+
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: $background-color-light;
+}
+
+.ant-table-tbody > tr > td.ant-table-column-sort {
+  background: #fff;
+}
+
+.ant-table-fixed-header .ant-table-scroll .ant-table-header {
+  overflow: hidden !important;
+}
+
+.ant-table-row-selected > td {
+  background: $background-color-light !important;
+}
+
+.ant-table-thead > tr > th.ant-table-column-sort {
+  background: none;
+}
+
+.ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}

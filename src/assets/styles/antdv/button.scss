@@ -1,0 +1,53 @@
+@use '../variables' as *;
+
+.ant-btn {
+  height: 36px;
+  color: $primary-color;
+  line-height: 20px;
+  background: $light-primary-color;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary-color;
+    background: $light-primary-hover-color;
+  }
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background: $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    background: $dark-primary-color;
+  }
+}
+
+.ant-btn-dashed {
+  color: #393b41;
+  background: #f5f5f8;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #393b41;
+    background: #d5d5de;
+  }
+}
+
+.ant-btn-link {
+  background: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary-color;
+    background: none;
+  }
+}
