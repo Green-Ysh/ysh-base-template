@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/CoderYsh/ysh-base-template/issues"
   },
-  "type": "module",
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=7.0.0"
@@ -34,7 +33,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "lint:style": "stylelint \"src/**/*.{css,scss,vue}\" --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,vue,ts,tsx,json,css,scss,less,md}\"",
-    "prepare": "husky install",
     "commit": "git-cz",
     "clean": "rimraf dist",
     "test": "vitest",
@@ -42,7 +40,8 @@
     "build:prod": "npm run clean && vite build --mode production",
     "build:dev": "npm run clean && vite build --mode development",
     "analyze": "vite build --mode production --config vite.config.analyze.js",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",
@@ -73,7 +72,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.31.0",
-    "husky": "^9.0.11",
+    "husky": "^8.0.3",
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.35",
@@ -96,17 +95,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.vue": [
-      "eslint --fix",
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "src/**/*.js": [
+    "*.{js,jsx,vue,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
-    "src/**/*.{css, scss}": [
-      "stylelint --fix=false",
+    "*.{css,less,scss,sass}": [
       "prettier --write"
     ]
   }
