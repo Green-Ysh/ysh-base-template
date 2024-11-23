@@ -130,3 +130,148 @@ npm run build
    - 任何引用本项目的文档或营销材料中
 
 详细信息请查看 [LICENSE](LICENSE) 文件。
+
+## YSH Base Template
+
+A comprehensive Vue 3 template with TypeScript, Vite, and Ant Design Vue.  
+一个完整的 Vue 3 模板，集成了 TypeScript、Vite 和 Ant Design Vue。
+
+## Features | 特性
+
+- 🚀 **Latest Technology Stack** | **最新技术栈**
+  - Vue 3.3+
+  - Vite 4.4+
+  - TypeScript 5.0+
+  - Ant Design Vue 4.0+
+  - Pinia 2.1+
+
+- 📦 **Out of the Box** | **开箱即用**
+  - Auto Import | 自动导入
+  - Components Auto Registration | 组件自动注册
+  - File-based Routing | 基于文件的路由
+  - State Management (Pinia) | 状态管理 (Pinia)
+  - Composition API by Default | 默认使用组合式 API
+
+- 🎨 **Development Experience** | **开发体验**
+  - TypeScript Support | TypeScript 支持
+  - Hot Module Replacement | 热模块替换
+  - ESLint + Prettier | 代码规范和格式化
+  - StyleLint | 样式规范检查
+  - Commit Message Lint | 提交信息规范
+
+- 🔧 **Production Ready** | **生产就绪**
+  - Code Splitting | 代码分割
+  - Bundle Analysis | 打包分析
+  - Gzip Compression | Gzip 压缩
+  - Browser Compatibility | 浏览器兼容性
+
+## Prerequisites | 前置要求
+
+- Node.js >= 16
+- pnpm >= 8
+
+## Getting Started | 开始使用
+
+```bash
+# Clone the repository | 克隆仓库
+git clone https://github.com/Green-Ysh/ysh-base-template.git
+
+# Enter the project directory | 进入项目目录
+cd ysh-base-template
+
+# Install dependencies | 安装依赖
+pnpm install
+
+# Start development server | 启动开发服务器
+pnpm dev
+
+# Build for production | 构建生产版本
+pnpm build
+
+# Preview production build | 预览生产构建
+pnpm preview
+```
+
+## Project Structure | 项目结构
+
+```
+├── public/                 # Static assets | 静态资源
+├── src/
+│   ├── api/               # API requests | API 请求
+│   ├── assets/            # Project assets | 项目资源
+│   ├── components/        # Global components | 全局组件
+│   ├── composables/       # Composable functions | 组合式函数
+│   ├── config/            # Global configurations | 全局配置
+│   ├── directives/        # Vue directives | Vue 指令
+│   ├── hooks/             # Vue hooks | Vue 钩子
+│   ├── layouts/           # Layout components | 布局组件
+│   ├── plugins/           # Vue plugins | Vue 插件
+│   ├── router/            # Vue Router configuration | 路由配置
+│   ├── stores/            # Pinia stores | Pinia 状态管理
+│   ├── types/             # TypeScript types | TypeScript 类型
+│   ├── utils/             # Utility functions | 工具函数
+│   ├── views/             # Page components | 页面组件
+│   ├── App.vue            # Root component | 根组件
+│   └── main.ts            # Application entry | 应用入口
+├── .browserslistrc        # Browser compatibility | 浏览器兼容性
+├── .commitlintrc.js       # Commit message lint config | 提交信息规范配置
+├── .editorconfig          # Editor configuration | 编辑器配置
+├── .env                   # Environment variables | 环境变量
+├── .eslintrc.js          # ESLint configuration | ESLint 配置
+├── .gitignore            # Git ignore rules | Git 忽略规则
+├── .prettierrc.js        # Prettier configuration | Prettier 配置
+├── .stylelintrc.js       # StyleLint configuration | StyleLint 配置
+├── index.html            # Entry HTML | 入口 HTML
+├── package.json          # Project manifest | 项目清单
+├── pnpm-lock.yaml        # PNPM lock file | PNPM 锁定文件
+├── tsconfig.json         # TypeScript configuration | TypeScript 配置
+└── vite.config.ts        # Vite configuration | Vite 配置
+```
+
+## Available Scripts | 可用脚本
+
+```bash
+# Development | 开发
+pnpm dev            # Start development server | 启动开发服务器
+pnpm build          # Build for production | 构建生产版本
+pnpm preview        # Preview production build | 预览生产构建
+
+# Code Quality | 代码质量
+pnpm lint          # Lint code | 代码检查
+pnpm lint:style    # Lint styles | 样式检查
+pnpm format        # Format code | 代码格式化
+
+# Type Checking | 类型检查
+pnpm type-check    # Run type checking | 运行类型检查
+```
+
+## Configuration | 配置
+
+### Environment Variables | 环境变量
+
+```bash
+# .env
+VITE_APP_TITLE=YSH Base Template
+VITE_APP_API_BASE_URL=http://localhost:3000
+```
+
+### Theme Customization | 主题定制
+
+Edit `src/assets/styles/antdv/theme.less` to customize Ant Design Vue theme.  
+编辑 `src/assets/styles/antdv/theme.less` 来自定义 Ant Design Vue 主题。
+
+## Contributing | 贡献
+
+1. Fork the repository | 复刻仓库
+2. Create your feature branch | 创建特性分支
+3. Commit your changes | 提交更改
+4. Push to the branch | 推送到分支
+5. Create a pull request | 创建拉取请求
+
+## License | 许可证
+
+[MIT](LICENSE)
+
+## Author | 作者
+
+[Green-Ysh](https://github.com/Green-Ysh)
